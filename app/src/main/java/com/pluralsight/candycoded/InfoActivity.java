@@ -43,6 +43,7 @@ public class InfoActivity extends AppCompatActivity {
             startActivity(intent);
         }
     }
+    // TODO: 21-07-2021 created an Uri with a tag for a map, then intent with actionview with uri created (uri passed at creation) then set package for google maps (check on activity and then started)
 
     // ***
     // TODO - Task 3 - Launch the Phone Activity
@@ -53,5 +54,5 @@ public class InfoActivity extends AppCompatActivity {
         phoneIntent.setData(uri);
         startActivity(phoneIntent);
     }
-
+// TODO: 21-07-2021 created a phone intent with action dial and uri phone number set as data to the intent
 }

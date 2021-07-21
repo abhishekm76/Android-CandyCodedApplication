@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
     Intent intent = new Intent(this,InfoActivity.class);
     startActivity(intent);
     return super.onOptionsItemSelected(item);
-  }
+  }// TODO: 21-07-2021 intent has this for context and the activity to start before return statement 
 
   @Override
   public boolean onCreateOptionsMenu(Menu menu) {
@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
   // ***
   // TODO - Task 1 - Show Store Information Activity
   // ***
-
+// TODO: 21-07-2021 onCreateOptionsMenu adds the button, onOptionsItemSelected runs the code on clicking the menu 
   private void addCandiesToDatabase(Candy[] candies) {
     SQLiteDatabase db = candyDbHelper.getWritableDatabase();
 
